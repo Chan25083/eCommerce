@@ -40,6 +40,7 @@
             var check = false;
             for (var i = 0; i < cartList.length; i++) {
                 if (cartList[i].productId == $(this).val()) {
+                    cartList[i].cartQuantity += 1;
                     check = true;
                     break;
                 }
